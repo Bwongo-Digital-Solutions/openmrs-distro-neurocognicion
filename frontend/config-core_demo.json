@@ -15,6 +15,27 @@
       }
     }
   },
+   "@openmrs/esm-patient-registration-app": {
+    "links": {
+      "submitButton": "${openmrsSpaBase}/post-registration/${patientUuid}"
+    },
+    "fieldConfigurations": {
+      "gender": [
+        {
+          "value": "male",
+          "label": "Male",
+          "display": "Male",
+          "name": "Male"
+        },
+        {
+          "value": "female",
+          "label": "Female",
+          "display": "Female",
+          "name": "Female"
+        }
+      ]
+    }
+  },
   "@openmrs/esm-laboratory-app": {
     "labTableColumns": ["name", "patientId", "urgency", "age", "sex", "totalOrders", "action"]
   },
